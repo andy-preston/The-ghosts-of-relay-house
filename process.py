@@ -2,8 +2,8 @@
 
 from os import system
 
-previous_midpoint = 3616
-previous_bandwidth = 600
+previous_midpoint = 3016
+previous_bandwidth = 120
 low_frequency = previous_midpoint - previous_bandwidth
 high_frequency = previous_midpoint + previous_bandwidth
 band_width = (high_frequency - low_frequency) / 10.0
