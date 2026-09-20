@@ -2,8 +2,8 @@
 
 from os import system
 
-low_frequency = 20.0
-high_frequency = 20000.0
+low_frequency = 2018.0 - 1998.0
+high_frequency = 4016.0 + 1998.0
 band_width = (high_frequency - low_frequency) / 10.0
 
 mid_point = low_frequency
