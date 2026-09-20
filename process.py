@@ -2,8 +2,10 @@
 
 from os import system
 
-low_frequency = 2018.0 - 1998.0
-high_frequency = 4016.0 + 1998.0
+previous_midpoint = 3616
+previous_bandwidth = 600
+low_frequency = previous_midpoint - previous_bandwidth
+high_frequency = previous_midpoint + previous_bandwidth
 band_width = (high_frequency - low_frequency) / 10.0
 
 mid_point = low_frequency
@@ -20,6 +22,7 @@ while mid_point < high_frequency:
         'bandpass',
         f'{mid_point}',
         f'{band_width}',
+        'norm',
     ])
     print(command)
     system(command)
